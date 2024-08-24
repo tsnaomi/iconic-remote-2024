@@ -1,0 +1,178 @@
+:root {
+  --blink-block-speed: 0.8s;
+  --ellipsis-speed: 1600ms;
+  --production-bottom-spacing: 2rem;
+
+  /* icon font size for icon-selection buttons, madlib
+     buttons & captions, and production keys */
+  --iconic-sz: 3.4rem;
+
+  /* icon font size for production (in)correct answers */
+  --iconic-sz-small: 3.4rem;
+
+  /* icon font size for picture-selection captions and
+     production line + prompt */
+  --iconic-sz-large: 3.4rem;
+}
+
+@font-face {
+  font-family: 'Iconic-Postnom';
+  src:  url('../fonts/Iconic-Postnom.eot?v25ufn');
+  src:  url('../fonts/Iconic-Postnom.eot?v25ufn#iefix') format('embedded-opentype'),
+    url('../fonts/Iconic-Postnom.woff2?v25ufn') format('woff2'),
+    url('../fonts/Iconic-Postnom.ttf?v25ufn') format('truetype'),
+    url('../fonts/Iconic-Postnom.woff?v25ufn') format('woff'),
+    url('../fonts/Iconic-Postnom.svg?v25ufn#Iconic-Prenom') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.iconic-postnom,
+.iconic {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Iconic-Postnom' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* enable ligatures */
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+
+  /* better font rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* instructions ---------------------------------------- */
+
+  #kimi-container h1 {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  #kimi-container p {
+    vertical-align: top !important;
+  }
+
+/* character ------------------------------------------- */
+
+  #begin img,
+  #pretest img {
+    height: 220px;
+  }
+
+/* let's begin ----------------------------------------- */
+
+  #begin h1 {
+    margin-bottom:1.25rem
+  }
+
+/* pretest --------------------------------------------- */
+
+  #pretest {
+    text-align: center;
+    width: 43rem;
+  }
+
+  #pretest p {
+    margin-top: 1.5rem;
+  }
+
+  #pretest p:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .affix-border {
+    color: var(--dark-purple);
+    font-size: calc(0.75 * var(--iconic-sz-small));
+    text-align: center !important;
+  }
+
+/* questionnaire (bookends...) ------------------------- */
+
+  .pre-questionnaire {
+    padding-bottom: 5%;
+    padding-bottom: var(--bookends-container-bottom-spacing);
+  }
+
+  .pre-questionnaire img {
+    height: 22rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #strategies .iconic {
+    font-size: 1.5em !important;
+    letter-spacing: calc(0.5em * var(--letter-spacing-prop));
+    padding-left: calc(0.5em * var(--letter-spacing-prop));
+  }
+
+
+/* keyboard -------------------------------------------- */
+
+  .jspsych-production-key {
+    margin: 0 calc(0.12 * var(--iconic-sz));
+  }
+
+  .jspsych-production-key[data-key="p"],
+  .jspsych-production-key[data-key="d"],
+  .jspsych-production-key[data-key="2"],
+  .jspsych-production-key[data-key="3"],
+  .jspsych-production-key[data-key="b"],
+  .jspsych-production-key[data-key="g"],
+  .jspsych-production-key[data-key="r"] {
+    min-width: calc(0.9 * var(--iconic-sz) + 2px);
+  }
+
+  .jspsych-production-key[data-key="n"],
+  .jspsych-production-key[data-key="c"] {
+    min-width: calc((1 + 2 * var(--btn-padding-prop)) * (0.6 * var(--iconic-sz)));
+  }
+
+/* production ------------------------------------------ */
+
+  .blink-block {
+    margin-top: calc(-1 * var(--blank-line-padding));
+    margin-right: calc(1 * var(--letter-spacing-prop)* var(--iconic-sz-large));
+    height: calc(2 * var(--blank-line-padding) + var(--iconic-sz-large)) !important;
+    width: var(--iconic-sz-large);
+    background-color: #eaeaff; /* lighter than lightest purple */
+    border-bottom: var(--blank-line-width) solid var(--lightest-purple);
+    display: inline-block;
+    animation: blink-block var(--blink-block-speed) linear infinite alternate;
+  }
+
+  @keyframes blink-block {
+    50% {
+      border-bottom-color: var(--dark-purple);
+    }
+  }
+
+  .ellipsis:after {
+    color: var(--light-purple);
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) var(--ellipsis-speed) infinite;
+    animation: ellipsis steps(4, end) var(--ellipsis-speed) infinite;
+    content: "\2026";
+    width: 0px;
+    margin-right: calc(1.45 * var(--iconic-sz-large));
+  }
+
+  @keyframes ellipsis {
+    to {
+      width: calc(1.45 * var(--iconic-sz-large));
+      margin-right: 0;
+    }
+  }

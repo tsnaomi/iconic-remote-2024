@@ -1,0 +1,71 @@
+/**
+ * ========================================================
+ * M20-specific experiment styling
+ * ========================================================
+ */
+
+/* "red" ----------------------------------------------- */
+
+  .iconic-red {
+    color: #ea1943;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: black;
+    display: inline !important;
+  }
+
+  .iconic-green {
+    color: #6AA74F;
+    -webkit-text-stroke-width: 0.1rem;
+    -webkit-text-stroke-color: black;
+    display: inline !important;
+  }
+
+  button:disabled .iconic-red {
+    color: inherit;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: none;
+  }
+
+  #jspsych-madlib-blank.jspsych-madlib-correct .iconic-red,
+  #jspsych-production-line.jspsych-production-correct .iconic-red {
+    color: var(--correct);
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: none;
+  }
+
+/* production answers ---------------------------------- */
+
+  #jspsych-production-answer .function {
+    padding: 0.7rem 0.7rem 0;
+  }
+
+  #jspsych-production-correct-container > .function {
+    border-top: transparent var(--answer-border-width) solid;
+  }
+
+  #jspsych-production-incorrect,
+  #jspsych-production-correct {
+    color: initial;
+    border-width: var(--answer-border-width);
+    border-style: solid;
+    padding: 0.7rem 1.4rem;
+    margin-bottom: initial;
+  }
+
+  #jspsych-production-incorrect:after {
+    content: " ";
+    margin-right: calc(-1 * var(--letter-spacing-prop) * var(--iconic-sz-small));
+  }
+
+  #jspsych-production-incorrect,
+  #jspsych-production-correct-container {
+    float: none;
+  }
+
+  #jspsych-production-incorrect {
+    border-color: var(--incorrect);
+  }
+
+  #jspsych-production-correct {
+    border-color: var(--correct);
+  }

@@ -1,0 +1,47 @@
+/**
+ * ========================================================
+ * Styling consistent with Mixtec experiments
+ * ========================================================
+ *
+ * Differences in iconic-remote:
+ *  - portrait orientation styling
+ *  - trial number display
+ *  - enlarged stimuli, font, & proceed button
+ */
+
+:root {
+  --guide: #fff09d;
+  --glow-dim: 0.45rem;
+  --blank-line-width: 5px;
+
+  /* icon font size for icon-selection buttons, madlib
+     buttons & captions, and production keys */
+  --iconic-sz: 3.8rem;
+
+  /* icon font size for production (in)correct answers */
+  --iconic-sz-small: 3.8rem;
+
+  /* icon font size for picture-selection captions and
+     production line + prompt */
+  --iconic-sz-large: 3.8rem;
+}
+
+/* speed up glow */
+.jspsych-production-keyboard-glow,
+.jspsych-selection-glow button,
+.jspsych-madlib-glow button {
+  animation: guiding-glow 1.2s infinite alternate;
+}
+
+/* make backspace button blue */
+#jspsych-production-backspace-key .function {
+  color: #6495ED;
+}
+
+/* outline keyboard for visibility */
+#jspsych-production-keyboard {
+  border: 1px solid transparent;
+}
+.jspsych-production-keyboard-glow {
+  border-color: var(--light-gray) !important;
+}

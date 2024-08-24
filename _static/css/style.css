@@ -1,0 +1,140 @@
+a {
+  color: hotpink;
+  font-weight: bold;
+}
+
+a:hover {
+  color: pink;
+}
+
+/* launch ---------------------------------------------- */
+
+  #hidden-version {
+    display: block;
+    height: 0px;
+    font-size: 0px;
+  }
+
+  .launch-experiment .iconic {
+    font-size: 8rem;
+    margin-top: 10rem;
+  }
+
+  .launch-experiment h1 {
+    margin-top: 3rem;
+    margin: 3rem auto 5rem;
+  }
+
+  #ready,
+  #ready button {
+    font-size: 1.4rem;
+  }
+
+  #loading,
+  #failure {
+    color: limegreen;
+    font-weight: bold;
+    font-style: italic;
+  }
+
+  #failure {
+    color: crimson;
+  }
+
+  .launch-experiment .jspsych-btngroup {
+    display: none;
+    margin-top: 0.75rem;
+  }
+
+  .launch-experiment .jspsych-btngroup button {
+    color: #fff;
+    font-weight: bold;
+    margin: 0 0.55rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 14px;
+    border: 3px solid hotpink;
+    background-color: hotpink;
+  }
+
+  .launch-experiment .jspsych-btngroup button:hover,
+  .launch-experiment .jspsych-btngroup button:focus,
+  .launch-experiment .jspsych-btngroup button:active {
+    color: hotpink;
+    background-color: #ffe7eb;
+  }
+
+  #asterisk {
+    margin-right: 0.25rem;
+  }
+
+/* complete -------------------------------------------- */
+
+  #qualify-star {
+    font-size: 4rem;
+    margin-bottom: 5.5rem;
+    margin-top: -10rem;
+  }
+
+  #participant {
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  #participant .cond  {
+    color: #a8a8a8;
+  }
+
+  #participant-id .cond {
+    margin-left: 1rem;
+  }
+
+  #download-results a {
+    text-decoration: none;
+  }
+
+  #download-results .function {
+    font-weight: bold;
+    font-size: 5rem;
+  }
+
+  .questionnaire .jspsych-instructions-nav {
+    position: fixed;
+    width: 300px;
+    left: calc(50% - 150px);
+    bottom: 1.5rem;
+  }
+
+  .questionnaire #phrases,
+  .questionnaire #lexicon {
+    margin-top: -4rem;
+  }
+
+  .questionnaire #phrases {
+    letter-spacing: calc(var(--letter-spacing-prop) * var(--iconic-sz-large));
+  }
+
+  .questionnaire #phrases p {
+    margin: 2.25rem auto;
+    padding: 2rem 4rem;
+    border-radius: 14px;
+  }
+
+  .questionnaire #lexicon td {
+    text-align: center;
+    padding: 0.5rem 0.25rem;
+  }
+
+  .questionnaire #lexicon td .icon-box {
+    width: var(--iconic-sz-large);
+    padding: 2rem 4rem;
+    border-radius: 14px;
+    display: inline-block;
+  }
+
+  .questionnaire #phrases p:focus,
+  .questionnaire #phrases p:hover,
+  .questionnaire #lexicon td .icon-box:focus,
+  .questionnaire #lexicon td .icon-box:hover {
+    background-color: #eaeaff; /* lighter than lightest purple */
+  }

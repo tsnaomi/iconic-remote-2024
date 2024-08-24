@@ -1,0 +1,111 @@
+:root {
+  /* replay button colors */
+  --dark-turquoise: #31BDA6;
+  --light-turquoise: #84dfd0;
+  --lightest-turquoise: #c3efe8;
+
+  /* icon font size for icon-selection buttons, madlib
+     buttons & captions, and production keys */
+  --iconic-sz: 3.8rem;
+
+  /* icon font size for production (in)correct answers */
+  --iconic-sz-small: 3.8rem;
+
+  /* icon font size for picture-selection captions and
+     production line + prompt */
+  --iconic-sz-large: 3.8rem;
+}
+
+/* style trial number */
+#trial-n {
+  color: #333;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+/* remove darker border on iPad */
+.jspsych-selection-btn button:hover,
+.jspsych-selection-btn button:active,
+.jspsych-madlib-btn button:hover,
+.jspsych-madlib-btn button:active {
+  border-color: var(--gray);
+}
+
+/* audio instructions ---------------------------------- */
+
+  .instructions #jspsych-selection-btngroup .jspsych-btn {
+    margin: 0.5rem 0.55rem 1.5rem !important;
+  }
+
+  .instructions .jspsych-selection-glow button {
+    animation: none;
+  }
+
+  #character img {
+    min-height: 300px;
+    max-height: 500px;
+    margin-bottom: 1.5rem;
+  }
+
+/* replay button --------------------------------------- */
+
+  #replay {
+    border-radius: 100%;
+    position: relative;
+    text-indent: -9999px;
+    color: #fff;
+    width: var(--proceed-btn-sz);
+    height: var(--proceed-btn-sz);
+    border: 3px var(--dark-turquoise) solid;
+    background-color: var(--light-turquoise);
+  }
+
+  #replay span {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-left: 20px solid #fff;
+    border-bottom: 15px solid transparent;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+  }
+
+  #replay:hover{
+    color: var(--dark-turquoise);
+    background-color: var(--lightest-turquoise);
+  }
+
+  #replay:hover span{
+    border-left-color: var(--dark-turquoise);
+  }
+
+  #standalone-replay {
+    margin-bottom: 5rem;
+  }
+
+/* concept review -------------------------------------- */
+
+  .jspsych-selection-glow button:disabled {
+    animation: none;
+  }
+
+/* production ------------------------------------------ */
+
+  #jspsych-production-line-container {
+    margin-top: 0.5rem;
+  }
+
+/* handoff --------------------------------------------- */
+
+  .handoff #discreet-btn {
+    padding: 0;
+    border: none;
+    animation: none;
+    background-color: #fff;
+  }
+
+  .handoff #standalone-replay {
+    margin-bottom: 3.5rem;
+  }

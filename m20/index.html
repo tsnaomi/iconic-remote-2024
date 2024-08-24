@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    // function to signal that the experiment has failed to load properlly
+    function failed_launch() {
+      try {
+        var loading = document.getElementById("loading");
+        loading.id = "failure";
+        loading.innerHTML = "Experiment failed to load. Please try again.";
+      } catch {
+        // the experiment has already failed
+      }
+    };
+  </script>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modifiers (m20)</title>
+    <link rel="icon" type="image/x-icon" href="../_static/images/favicon.ico">
+    <!-- jsPsych -->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/jspsych@7.0.0/css/jspsych.css" onerror="failed_launch()"/>
+    <!-- custom -->
+    <link rel="stylesheet" type="text/css" href="../_static/css/ex.css" onerror="failed_launch()"/>
+    <link rel="stylesheet" type="text/css" href="../_static/css/ex-m20.css" onerror="failed_launch()"/>
+    <link rel="stylesheet" type="text/css" href="../_static/css/ex-v2.css" onerror="failed_launch()"/>
+    <link rel="stylesheet" type="text/css" href="../_static/css/ex-v3.css" onerror="failed_launch()"/>
+    <link rel="stylesheet" type="text/css" href="../_static/css/ex-remote.css" onerror="failed_launch()"/>
+    <link rel="stylesheet" type="text/css" href="../_static/css/ex-remote-m20.css" onerror="failed_launch()"/>
+    <link rel="stylesheet" type="text/css" href="../_static/css/style.css" onerror="failed_launch()"/>
+  </head>
+  <body class="jspsych-display-element">
+    <!-- hidden text (displayed in reading list) -->
+    <div id="hidden-version">
+      [v3.0] modifier-ordering experiment (m20); click a condition to launch`;
+    </div>
+    <!-- launch experiment -->
+    <div class="jspsych-content-wrapper">
+      <div id="jspsych-content" class="jspsych-content launch-experiment">
+        <p class="iconic">G</p>
+        <h1>modifiers</h1>
+        <div id="ready">
+          <p id="loading">loading...</p>
+          <div class="jspsych-btngroup">
+            <button class="jspsych-btn" type="button" value="noun-initial"><span id="asterisk">&#10045;</span> noun-initial</button>
+            <button class="jspsych-btn" type="button" value="noun-final">noun-final</button>
+          </div>
+        <div>
+      </div>
+    </div>
+    <!-- cache fonts, images, & audio-->
+    <div style="color:#fff;font-size:3px">
+      <span class="function">c</span>
+    </div>
+    <div id="preload">
+      <img src="../_static/images/young_woman_yellow_shirt.jpg" height="0">
+      <img src='../_static/stimuli/m20/ball.png' height='0'>
+      <img src='../_static/stimuli/m20/feather.png' height='0'>
+      <img src='../_static/stimuli/m20/mug.png' height='0'>
+      <img src='../_static/stimuli/m20/black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/two-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/two-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/two-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/three-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/three-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/three-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/two-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/two-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/two-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/two-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/two-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/two-red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/three-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/three-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/three-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/three-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/three-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/three-red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-two-red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-two-red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-black-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-black-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-black-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/this-three-red-mug.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-red-ball.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-red-feather.png' height='0'>
+      <img src='../_static/stimuli/m20/that-three-red-mug.png' height='0'>
+    </div>
+    <!-- jsPsych -->
+    <script src="https://unpkg.com/jspsych@7.0.0"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-call-function@1.1.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-instructions@1.1.4"></script>
+    <!-- base64Binary -->
+    <script src="../_static/js/base64Binary.js"></script>
+    <!-- csvToObj -->
+    <script src="../_static/js/csvToObj.js"></script>
+    <!-- custom -->
+    <script src="../_static/js/helpers.js"></script>
+    <script src="../_static/js/audio.js"></script>
+    <script src="../_static/js/selection.js"></script>
+    <script src="../_static/js/madlib.js"></script>
+    <script src="../_static/js/production.js"></script>
+    <script src="../_static/js/responsive-production.js"></script>
+    <script src="../_static/js/ex.js"></script>
+    <script src="../_static/js/ex-m20-v3.js"></script>
+    <script src="../_static/lists/m20-v3.js"></script>
+    <script src="../_static/audio/m20-audio.js"></script>
+    <!-- experiment -->
+    <script>
+      var AUDIO_CONTEXT;
+      var jsPsych;
+
+      // once everything has loaded...
+      window.onload = function() {
+
+        // create audio context
+        AUDIO_CONTEXT = new AudioContext();
+
+        // set wait-to-play duration (ms)
+        WAIT_TO_PLAY = 500;
+
+        // function to initalize the experiment
+        function experiment(condition) {
+          var character = "../_static/images/young_woman_yellow_shirt.jpg";
+
+          // initialize jsPsych
+          jsPsych = initJsPsych({
+            // log the # of additional adaptive learning trial
+            on_trial_finish: function() {
+              jsPsych.data.addProperties({ added_trials: exp.added_trials });
+            },
+            on_finish: function() {
+              // display results while completion page is commented out
+              jsPsych.data.displayData();
+            },
+          });
+
+          // undo audio suspension on iOS
+          if (AUDIO_CONTEXT.state == "suspended") {
+            AUDIO_CONTEXT.resume();
+          }
+
+          // generate participant ID
+          var id = jsPsych.randomization.randomID(3);
+
+          // add participant ID & condition to data
+          jsPsych.data.addProperties({
+            participant_id: id,
+            condition: condition,
+          });
+
+          // create phrase translations
+          var phrases;
+          if (condition == "noun-initial") {
+            phrases = [
+              "Bb",
+              "Mp",
+              "#",
+              "XLFr2d",
+              "XIFb3p", // default
+            ];
+          } else { // noun-final
+            phrases = [
+              "bB",
+              "pM",
+              "#",
+              "XLd2rF",
+              "XIp3bF", // default
+            ];
+          }
+
+          // create lexicon
+          var lexicon = [
+            ["X", "L", "I"],
+            ["B", "F", "M"],
+            ["p", "d"],
+            ["b", "r"],
+            ["2", "3"],
+          ];
+
+          // create timeline
+          var timeline = [];
+
+          // generate trials
+          var base = ex_base();
+          var exp = m20(condition);
+
+          // welcome & instructions
+          timeline.push(base.instructions("instructions", character, null));
+
+          // demo
+          timeline.push(exp.demo);
+
+          // practice
+          timeline.push(exp.demo);
+
+          // intro to concept review
+          timeline.push(base.instructions("concepts", character));
+
+          // concept review
+          timeline.push(exp.concepts);
+
+          // let's begin!
+          timeline.push(base.instructions("begin", character));
+
+          // block 1 - noun learning
+          timeline.push(exp.block1);
+
+          // block 2 - modifier learning
+          timeline.push(exp.block2);
+
+          // block 3 - one-modifier NP productions
+          timeline.push(exp.block3);
+
+          // pre-test instructions
+          timeline.push(base.instructions("pretest", character));
+
+          // block 4 - two-modifier NP productions
+          timeline.push(exp.block4);
+
+          // block 5 - three-modifier NP productions
+          timeline.push(exp.block5);
+
+          // silent score
+          timeline.push(base.silent_score([4, 5], "n_mod"));
+
+          // handoff
+          timeline.push(base.handoff("handoff", character));
+
+          // completion page
+          timeline.push(base.complete("m20", id, condition, m20_phrase, phrases, lexicon));
+
+          // start the experiment
+          jsPsych.run(timeline);
+
+          // add trial number div
+          var trial_n = document.createElement("div");
+          trial_n.id = "trial-n";
+          document.body.append(trial_n);
+        };
+
+        // initialize the experiment when a condition is selected
+        document.querySelectorAll(".launch-experiment button").forEach(btn => {
+          btn.onclick = () => experiment(btn.value);
+        })
+
+        // unhide the buttons to launch the experiment
+        document.getElementById("loading").remove();
+        document.querySelector(".launch-experiment .jspsych-btngroup").style.display = "inline-block";
+      };
+    </script>
+    <!-- service worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('../service-worker.js');
+      }
+    </script>
+    <script src="../service-worker.js"></script>
+  </body>
+</html>
