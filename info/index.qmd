@@ -29,7 +29,7 @@ include-after-body:
 ::: {.callout-note appearance="simple"}
 **Modifier experiment link:** <https://tsnaomi.net/iconic-remote-2024/m20>
 
-**Current version:** [\[v3.0\]]{.badge .bg-primary style="margin-left:2px;font-size:0.9rem"}
+**Current version:** [\[v3.1\]]{.badge .bg-primary style="margin-left:2px;font-size:0.9rem"}
 :::
 
 ## Setting up for offline usage
