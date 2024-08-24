@@ -124,7 +124,7 @@ var jsPsychSelection = (function (jspsych) {
         // measure response time
         var rt = Math.round(performance.now() - start_time);
         // extract participant's selected button
-        var choice = event.currentTarget;
+        var choice = event.currentTarget.parentElement;
         // get response
         var response = choice.getAttribute("data-choice");
         // remove glow on buttons
@@ -176,8 +176,6 @@ var jsPsychSelection = (function (jspsych) {
           if (trial.force_correct_button_press && !timeout) {
             // add pick-me animation
             answer.classList.add("jspsych-selection-answer");
-            // add event listener to the correct button (only)
-            answer.addEventListener("click", process_response);
           } else {
             // add correct answer styling
             answer.classList.add("jspsych-selection-correct");
